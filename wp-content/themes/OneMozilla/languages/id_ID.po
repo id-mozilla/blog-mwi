@@ -1,0 +1,420 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Mozilla 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-07 16:19-0800\n"
+"PO-Revision-Date: 2012-03-25 12:39+0100\n"
+"Last-Translator: Romi Hardiyanto <romihardiyanto@gmail.com>\n"
+"Language-Team: Indonesian <lang-id@mozilla.web.id>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;gettext;gettext_noop;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Indonesian\n"
+"X-Poedit-Country: INDONESIA\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:7
+msgid "Well, this is embarrassing&hellip;"
+msgstr "Mohon maaf ya&hellip;"
+
+#: ../404.php:10
+msgid "We hate to say it, but we couldn&#8217;t find the page or file you&#8217;re looking for."
+msgstr "Kami tidak menemukan laman atau berkas yang Anda minta."
+
+#: ../404.php:11
+msgid "If you typed in the address, try double-checking the spelling."
+msgstr "Jika Anda mengetik alamatnya secara manual, coba periksa lagi tulisannya."
+
+#: ../404.php:12
+msgid "If you followed a link from somewhere, please let us know at <em>webmaster at mozilla dot com</em>. Be sure to tell us where you came from and what you were looking for, and we&#8217;ll do our best to fix it."
+msgstr "Jika Anda mengikuti tautan dari laman dari tempat lain, silakan hubungi kami lewat <em>webmaster at mozilla dot web dot id</em>. Pastikan Anda mencantumkan informasi lewat mana Anda datang dan apa yang ingin Anda cari, kami akan berusaha sebaik mungkin untuk memperbaikinya."
+
+#: ../archive.php:17
+#: ../search.php:17
+msgid "Archive for "
+msgstr "Arsip"
+
+#: ../archive.php:18
+#: ../search.php:18
+msgid "Posts tagged with "
+msgstr "Pos dengan tag"
+
+#: ../archive.php:19
+#: ../archive.php:20
+#: ../archive.php:21
+#: ../search.php:19
+#: ../search.php:20
+#: ../search.php:21
+msgid "Posts from "
+msgstr "Pos dari"
+
+#: ../archive.php:22
+#: ../search.php:22
+msgid "Posts by "
+msgstr "Pos oleh"
+
+#: ../archive.php:23
+#: ../search.php:23
+msgid "We found "
+msgstr "Kami mendapatkan"
+
+#: ../archive.php:23
+#: ../search.php:23
+msgid "results for "
+msgstr "hasil untuk"
+
+#: ../archive.php:24
+#: ../search.php:24
+msgid "Archives"
+msgstr "Arsip"
+
+#: ../archive.php:31
+#: ../archive.php:47
+#: ../index.php:17
+#: ../search.php:31
+#: ../search.php:47
+msgid "Older posts"
+msgstr "Pos lebih lawas"
+
+#: ../archive.php:32
+#: ../archive.php:48
+#: ../index.php:18
+#: ../search.php:32
+#: ../search.php:48
+msgid "Newer posts"
+msgstr "Pos lebih anyar"
+
+#: ../archive.php:57
+#: ../index.php:27
+#: ../search.php:57
+msgid "Nothing Found"
+msgstr "Tidak Ada yang Ditemukan"
+
+#: ../archive.php:61
+#: ../search.php:61
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Maaf ya, tetapi tidak ada hasil yang dapat ditemukan pada arsip yang diminta. Mungkin bisa dicari lewat pos yang berkaitan?"
+
+#: ../comments.php:14
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Pos ini dilindungi sandi. Masukkan sandi untuk melihat komentar yang ada."
+
+#: ../comments.php:27
+msgid "Post a comment"
+msgstr "Kirim komentar"
+
+#: ../comments.php:36
+msgid "More comments:"
+msgstr "Komentar lainnya:"
+
+#: ../comments.php:46
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Anda harus <a href=\"%s\">masuk</a> untuk mengirimkan komentar."
+
+#: ../comments.php:51
+msgid "Post Your Comment"
+msgstr "Kirim Komentar"
+
+#: ../comments.php:51
+#, php-format
+msgid "Reply to %s"
+msgstr "Balasan kepada %s"
+
+#: ../comments.php:55
+#, php-format
+msgid "You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href=\"%3$s\">Log out?</a>"
+msgstr "Anda masuk sebagai <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href=\"%3$s\">Keluar?</a>"
+
+#: ../comments.php:58
+msgid "Name"
+msgstr "Nama"
+
+#: ../comments.php:58
+msgid "<span class=\"note\">(required)</span>"
+msgstr "<span class=\"note\">(wajib diisi)</span>"
+
+#: ../comments.php:62
+msgid "E-mail"
+msgstr "Email"
+
+#: ../comments.php:62
+msgid "<span class=\"note\">(required, will not be published)</span>"
+msgstr "<span class=\"note\">(wajib diisi, tidak akan ditampilkan)</span>"
+
+#: ../comments.php:66
+msgid "Website"
+msgstr "Situs web"
+
+#: ../comments.php:70
+msgid "Your comment"
+msgstr "Komentar Anda"
+
+#: ../comments.php:71
+msgid "Submit Comment"
+msgstr "Kirim Komentar"
+
+#: ../content-page.php:7
+msgid "Edit Page"
+msgstr "Edit Laman"
+
+#: ../content-page.php:9
+#: ../content-single.php:20
+#: ../content.php:31
+#: ../image.php:39
+msgid "Pages:"
+msgstr "Laman:"
+
+#: ../content-single.php:17
+#: ../content.php:34
+msgid "Edit Post"
+msgstr "Edit Pos"
+
+#: ../content-single.php:26
+#: ../content-summary.php:34
+#: ../content.php:39
+msgid "Tags"
+msgstr "Tag"
+
+#: ../content-single.php:28
+#: ../content-summary.php:36
+#: ../content.php:41
+#: ../sidebar.php:41
+msgid "Categories"
+msgstr "Kategori"
+
+#: ../content-summary.php:9
+#: ../content-summary.php:11
+#: ../content.php:10
+#: ../content.php:12
+#, php-format
+msgid "See all posts from %s"
+msgstr "Semua pos dari %s"
+
+#: ../content-summary.php:17
+#: ../content.php:18
+msgid "Posted by"
+msgstr "Diposkan oleh"
+
+#: ../content.php:30
+msgid "Continue reading &hellip;"
+msgstr "Selengkapnya &hellip;"
+
+#: ../footer.php:8
+msgid "Return to top"
+msgstr "Kembali ke atas"
+
+#: ../footer.php:13
+#, php-format
+msgid "Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content on this site is licensed under the <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> or any later version."
+msgstr "Kecuali dinyatakan <a href=\"%1s\" rel=\"external\">lain</a>, konten pada situs ini dilisensikan di bawah <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> atau versi yang lebih baru."
+
+#: ../footer.php:18
+msgid "Contact Us"
+msgstr "Hubungi Kami"
+
+#: ../footer.php:19
+msgid "Privacy Policy"
+msgstr "Kebijakan Privasi"
+
+#: ../footer.php:20
+msgid "Legal Notices"
+msgstr "Pernyataan Hukum"
+
+#: ../footer.php:21
+msgid "Report Trademark Abuse"
+msgstr "Laporkan Pelanggaran Merek Dagang"
+
+#: ../functions.php:35
+msgid "Primary Menu"
+msgstr "Menu Utama"
+
+#: ../functions.php:67
+msgid "Firefox Logo"
+msgstr "Logo Firefox"
+
+#: ../functions.php:193
+#, php-format
+msgid "Page %s"
+msgstr "Laman %s"
+
+#: ../functions.php:229
+msgid "This post is password protected. To view it, please enter the password."
+msgstr "Pos ini dilindungi sandi. Untuk melihatnya, masukkan sandinya."
+
+#: ../functions.php:230
+msgid "Password"
+msgstr "Sandi"
+
+#: ../functions.php:348
+msgid "Continue reading"
+msgstr "Selengkapnya"
+
+#: ../functions.php:391
+msgid "Sidebar"
+msgstr "Bilah sisi"
+
+#: ../functions.php:514
+msgid "Trackback from "
+msgstr "Lacak balik dari"
+
+#: ../functions.php:515
+#: ../functions.php:519
+msgid "on"
+msgstr "pada"
+
+#: ../functions.php:515
+#: ../functions.php:519
+#: ../functions.php:528
+#: ../functions.php:534
+msgid "Permanent link to this comment by "
+msgstr "Tautan permanen ke komentar ini oleh"
+
+#: ../functions.php:518
+msgid "Pingback from "
+msgstr "Lacak balik dari"
+
+#: ../functions.php:528
+#: ../functions.php:534
+msgid "wrote on"
+msgstr "ditulis pada"
+
+#: ../functions.php:540
+msgid "Your comment is awaiting moderation."
+msgstr "Komentar Anda menunggu proses moderasi."
+
+#: ../functions.php:548
+msgid "Edit Comment"
+msgstr "Edit Komentar"
+
+#: ../header.php:45
+#, php-format
+msgid "Search results for \"%s\""
+msgstr "Hasil pencarian untuk \"%s\""
+
+#: ../header.php:46
+#: ../header.php:47
+#: ../header.php:48
+msgid "Posts for "
+msgstr "Pos untuk"
+
+#: ../header.php:49
+msgid "Not Found"
+msgstr "Tidak Ditemukan"
+
+#: ../header.php:61
+msgid "Skip to main content"
+msgstr "Loncat ke konten utama"
+
+#: ../header.php:62
+msgid "Skip to sidebar"
+msgstr "Loncat ke bilah sisi"
+
+#: ../header.php:64
+msgid "Skip to blog search"
+msgstr "Loncat ke pencarian blog"
+
+#: ../header.php:74
+msgid "Go to the front page"
+msgstr "Buka laman beranda"
+
+#: ../image.php:12
+#, php-format
+msgid "<p class=\"attach-meta\">Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a>"
+msgstr "<p class=\"attach-meta\">Diterbitkan <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> pada <a href=\"%3$s\" title=\"Tautan ke gambar ukuran besar\">%4$s &times; %5$s</a>"
+
+#: ../image.php:20
+msgid "Edit Attachment"
+msgstr "Edit Lampiran"
+
+#: ../index.php:31
+msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
+msgstr "Maaf, kami tidak menemukan yang dicari pada arsip. Silakan mencarinya lewat kotak pencarian."
+
+#: ../sidebar.php:9
+#: ../sidebar.php:55
+msgid "About"
+msgstr "Tentang"
+
+#: ../sidebar.php:35
+#: ../sidebar.php:81
+msgid "More from "
+msgstr "Yang lain dari"
+
+#: ../inc/theme-options.php:46
+msgid "Color Scheme"
+msgstr "Skema warna"
+
+#: ../inc/theme-options.php:54
+msgid "Hide post authors"
+msgstr "Sembunyikan penyusun pos"
+
+#: ../inc/theme-options.php:88
+#: ../inc/theme-options.php:89
+msgid "Theme Options"
+msgstr "Opsi Tema"
+
+#: ../inc/theme-options.php:104
+msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, One Mozilla, provides the following Theme Options:"
+msgstr "Bebetapa tema menyediakan opsi pengubahsuaian yang dikelompokkan pada layar Opsi Tema. Jika Anda mengubah tema, opsi yang tersedia akan berubah sesuai dengan tema yang dipilih. Tema One Mozilla menyediakan Opsi Tema sebagai berikut:"
+
+#: ../inc/theme-options.php:106
+msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: \"Sandstone\" (reddish-orange background) is the default, suitable for most Mozilla blogs. \"Granite\" (light blue background) suitable for Firefox-related blogs. \"Slate\" is a light, neutral gray. \"Obsidian\" is a light-on-dark scheme"
+msgstr "<strong>Skema Warna</strong>: Anda dapat memilih dari beberapa skema warna: \"Sandstone\" (latar belakang oranye-merah sebagai pilihan baku, cocok untuk blog Mozilla. \"Granit\" (latar belakang biru terang) cocok untuk blog terkait Firefox. \"Slate\" merupakan tema netral dan terang. \"Obsidian\" adalah tema terang di atas gelap."
+
+#: ../inc/theme-options.php:107
+msgid "<strong>Hide post authors</strong>: Post authors are shown by default, with an author bio in the sidebar on single post pages. You can choose to hide post authors and the blog will be anonymous to the public, though authors will still be visible in the administration panel."
+msgstr "<strong>Sembunyikan penyusun pos</strong>: Penyusun pos ditampilkan jika tidak diubah, beserta bio penyusun pada bilah samping di sebuah laman pos. Anda dapat memilih untuk menyembunyikan penyusun pos agar pos tampil dengan penyusun anonim untuk publik, walaupun penyusunnya masih tampak pada panel administrasi."
+
+#: ../inc/theme-options.php:109
+msgid "Remember to click \"Save Changes\" to save any changes you have made to the theme options."
+msgstr "Jangan lupa mengeklik \"Simpan Perubahan\" untuk menyimpan perubahan pada opsi tema."
+
+#: ../inc/theme-options.php:111
+msgid "For more information:"
+msgstr "Informasi selengkapnya:"
+
+#: ../inc/theme-options.php:112
+msgid "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Dokumentasi tentang Opsi Tema</a>"
+
+#: ../inc/theme-options.php:113
+msgid "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Forum Dukungan</a>"
+
+#: ../inc/theme-options.php:120
+msgid "Overview"
+msgstr "Ringkasan"
+
+#: ../inc/theme-options.php:152
+msgid "Sandstone"
+msgstr "Sandstone"
+
+#: ../inc/theme-options.php:157
+msgid "Granite"
+msgstr "Granit"
+
+#: ../inc/theme-options.php:162
+msgid "Slate"
+msgstr "Slate"
+
+#: ../inc/theme-options.php:167
+msgid "Obsidian"
+msgstr "Obsidian"
+
+#: ../inc/theme-options.php:213
+msgid "Hide post authors (makes posts anonymous to the public)"
+msgstr "Sembunyikan penyusun pos (diterbitkan sebagai anonim untuk publik)"
+
+#: ../inc/theme-options.php:227
+#, php-format
+msgid "%s Theme Options"
+msgstr "Opsi Tema %s"
+
+#: ../searchform.php:3
+#, php-format
+msgid "Search"
+msgstr "Cari"
+
