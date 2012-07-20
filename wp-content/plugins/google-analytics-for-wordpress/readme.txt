@@ -1,22 +1,51 @@
-=== Google Analytics for WordPress ===
+﻿=== Google Analytics for WordPress ===
 Contributors: joostdevalk
 Donate link: http://yoast.com/donate/
-Tags: analytics, google analytics, statistics
-Requires at least: 2.7
-Tested up to: 2.9
-Stable tag: 3.2.5
+Tags: analytics, google analytics, statistics, tracking, stats, google
+Requires at least: 2.8
+Tested up to: 3.3
+Stable tag: 4.2.4
 
-The Google Analytics for WordPress plugin automatically tracks and segments all outbound links from within posts, comment author links, links within comments, blogroll links and downloads. It also allows you to track AdSense clicks, add extra search engines, track image search queries and it will even work together with Urchin.
+Track your WordPress site easily and with lots of metadata: views per author & category, automatic tracking of outbound clicks and pageviews.
 
 == Description ==
 
-The Google Analytics for WordPress plugin automatically tracks and segments all outbound links from within posts, comment author links, links within comments, blogroll links and downloads. It also allows you to track AdSense clicks, add extra search engines, track image search queries and it will even work together with Urchin.
+The Google Analytics for WordPress plugin allows you to track your blog easily and with lots of metadata. 
 
-In the options panel for the plugin, you can determine the prefixes to use for the different kinds of outbound links and downloads it tracks.
+Check out the [Google Analytics for WordPress video](http://www.youtube.com/watch?v=tnUXzbvXxSQ):
 
-* [Google Analytics for WordPress](http://yoast.com/wordpress/google-analytics/).
-* Other [Wordpress plugins](http://yoast.com/wordpress/) by the same author.
-* Check out the authors [WordPress Hosting](http://yoast.com/wordpress-hosting/) experience. Good hosting is hard to come by, but it doesn't have to be expensive, Joost tells you why!
+http://www.youtube.com/watch?v=tnUXzbvXxSQ&hd=1
+
+Full list of features:
+
+* Simple installation through integration with Google Analytics API: authenticate, select the site you want to track and you're done.
+* This plugin uses the asynchronous Google Analytics tracking code, the fastest and most reliable tracking code Google Analytics offers.
+* Option to manually place the tracking code in another location.
+* Automatic Google Analytics site speed tracking.
+* Outbound link & downloads tracking.
+	* Configurable options to track outbound links either as pageviews.
+	* Option to track just downloads as pageviews in Google Analytics.
+* Allows usage of custom variables in Google Analytics to track meta data on pages. Support for the following custom variables:
+	* Author
+	* Single category and / or multiple categories
+	* Post type (especially useful if you use custom post types)
+	* Logged in users
+	* Publication Year
+	* Tags
+* Possibility to ignore any user level and up, so all editors and higher for instance.
+* Easily connect your Google AdSense and Google Analytics accounts.
+* Option to tag links with Google Analytics campaign tracking, with the option to use hashes (#).
+* Option anonymize IP's, for use in countries like Germany.
+* Full [debug mode](http://yoast.com/google-analytics-debug-mode/), including Firebug lite and ga_debug.js for debugging Google Analytics issues.
+* Allow local hosting of ga.js file.
+* Tracking of search engines not included in Google Analytics default tracking.
+* Tracking of login and registration forms.
+
+Other interesting stuff:
+
+* Check out the other [WordPress Plugins](http://yoast.com/wordpress/) by the same author.
+* Want to increase traffic to your WordPress blog? Check out the [WordPress SEO](http://yoast.com/articles/wordpress-seo/) Guide!
+* Check out the authors [WordPress Hosting](http://yoast.com/articles/wordpress-hosting/) experience. Good hosting is hard to come by, but it doesn't have to be expensive, Joost tells you why!
 
 == Installation ==
 
@@ -29,11 +58,165 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
-= 3.2.5 =
-* Fix for XSS vulnerability as mentioned [here](http://www.securityfocus.com/archive/1/508211).
+= 4.2.4 =
 
-= 3.2.4 =
-* Fixed a bug in search tracking introduced with previous version.
+* Fixed bug introduced with 4.2.3 that wouldn't allow saving settings.
+* Now only flushing enabled W3TC caches.
+
+= 4.2.3 =
+
+* Removed Dashboard widget.
+* Improvements to comment form tracking.
+
+= 4.2.2 =
+
+* Fix for OAuth issues, caused by other plugins that don't check for the existence of a class. Namespaced the whole thing to prevent it.
+
+= 4.2.1 =
+
+* Minor bugfix.
+
+= 4.2 =
+
+* Google Authentication now happens using OAuth. The requests have become signed as an extra security measure and tokens have become more stable, as opposed to the prior tokens used with AuthSub.
+* Added support for cross-domain tracking.
+* Fixed various small bugs.
+
+= 4.1.3 =
+
+* Security fix: badly crafted comments could lead to insertion of "weird" links into comments. They'd have to pass your moderation, but still... Immediate update advised. Props to David Whitehouse and James Slater for finding it.
+
+= 4.1.2 =
+
+* Fixed bug with custom SE tracking introduced in 4.1.1.
+
+= 4.1.1 =
+
+* Made plugin admin work with jQuery 1.6 and jQuery 1.4.
+* Added contextual help.
+* Improved cache flushing when using W3TC.
+* Fixed various minor other notices.
+* First stab at getting ready for full i18n compatibility.
+
+= 4.1 =
+
+* Added:
+	* Google Site Speed tracking, turned it on by default.
+	
+* Fixed:
+	* Custom code now properly removes slashes.
+	
+= 4.0.12 =
+
+* Fixed:
+	* Tons of notices in backend and front end when no settings were saved yet.
+	* Set proper defaults for all variables.
+	* Notice for unset categories array on custom post types.
+	* Notice for unset variable.
+	* Error when user is not logged in in certain corner cases.
+	* Bug where $options was used but never loaded for blogroll links.
+	
+= 4.0.11 =
+
+* Bugs fixed:
+	* You can now disable comment form tracking properly.
+	* Removed charset property from script tags to allow validation with HTML5 doctype.
+	
+= 4.0.10 =
+
+* Known issues:
+	* Authentication with Google gives errors in quite a few cases. Please use the manual option to add your UA code until we find a way to reliably fix it.
+	
+* Added functionality:
+	* Option to set `_setAllowHash` to false, for proper subdomain tracking and some other uses.
+	* Option to add a custom string of code to the tracking, before the push string is sent out.
+
+* Documentation fixes:
+	* Fixed link for `_setDomainName()`.
+	* Fixed some grammatical errors (keep emailing me about those, please!)
+	* Removed second comment in source output.
+	* Fixed version number output in source.
+
+= 4.0.9 =
+
+* Code enhancements:
+	* Updated Shopp integration to also work with the upcoming Shopp 1.1 and higher.
+	* Switched from [split](http://php.net/split) to [explode](http://php.net/explode), as split has been deprecated in PHP 5.3+.
+* New features:
+	* A new debug mode has been added, using the new [ga_debug.js](http://analytics.blogspot.com/2010/08/new-tools-to-debug-your-tracking-code.html). Along with this you can now enable Firebug Lite, so you can easily see the output from the debug script in each browser. Admins only, of course.
+	* A list of modules has been added to the right sidebar, to allow easy navigation within the settings page.
+
+= 4.0.8 =
+* Reverted double quote change from 4.0.7 because it was causing bigger issues.
+
+= 4.0.7 =
+* Bugs fixed in this release:
+	* Changed access level from "edit_users" to "manage_options" so super-admins in an multi site environment would be able to access.
+	* Not a real bug but a fix nonetheless: UA ID is now trimmed on output, so spaces accidently entered in the settings screen won't prevent tracking.
+	* Changed double quotes in link tracking output to single quotes to resolve incompatibilities with several plugins.
+
+= 4.0.6 =
+* Bugs fixed in this release:
+	* Sanitizing relative URL's could go wrong on some blogs installed in subdirectories.
+	* Comment form tracking only worked for posts, not for pages, and would sometimes cause other issues. Patch by [Milan Dinić](http://blog.milandinic.com/).
+	* Settings page: now correctly hiding internal links to track as outbound block when outbound link tracking is disabled.
+* Code sanitization:
+	* Hardcoded the [scope for custom variables](http://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._setCustomVar) to prevent that from possibly going wrong.
+	* Improved method of determining whether current user should be tracked or not.
+	* Added plugin version number in script branding comment, and moved branding comment to within CDATA section to assist in debugging, even when people use W3TC or another form of code minification.
+* Documentation fixes:
+	* Updated custom variable order in settings panel to reflect order of tracking. You can now determine their index key by counting down, first checked box is index 1, second 2, etc.
+	* Ignored users dropdown now correctly reflects that ignoring subcribers and up means ignoring ALL logged in users.
+	
+= 4.0.5 =
+* New features in this release: 
+	* Added a simple check to see if the UA code, when entered manually, matches a basic pattern of UA-1234567-12.
+	* Added integration with [W3 Total Cache](http://wordpress.org/extend/plugins/w3-total-cache/) and [WP Super Cache](http://wordpress.org/extend/plugins/wp-super-cache/). The page cache is now automatically cleared after updating settings. Caching is recommended for all WordPress users, as faster page loads improve tracking reliability and W3 Total Cache is our recommended caching plugin.
+	* Added the option to enter a manual location for ga.js, allowing you to host it locally should you wish to.
+* Bugs fixed:
+	* Fixed implementation of _anonymizeIp, it now correctly anonymizes IP's by setting [_gat._anonymizeIp](http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp).
+	* Increased request timeout time for Google Analytics authentication from 10 to 20 seconds, for slow hosts (if this fixes it for you, your hosting is probably not really good, consider another WordPress host).
+* Documentation fixes:
+	* Added a note about profiles with the same UA code to the Analytics Profile selection.
+	* The profile selection dropdown now shows the UA code after the profile name too.
+	* Updated the [screenshots](http://wordpress.org/extend/plugins/google-analytics-for-wordpress/screenshots/) and the [FAQ](http://wordpress.org/extend/plugins/google-analytics-for-wordpress/faq/) for this plugin.
+
+= 4.0.4 =
+* Fix for stupid boolean mistake in 4.0.3.
+
+= 4.0.3 =
+* New features in this release: 
+	* Added versioning to the options array, to allow for easy addition of options.
+	* Added an option to enable comment form tracking (as this loads jQuery), defaults to on.
+* Bugs fixed:
+	* If you upgraded from before 4.0 to 4.0.2 you might have an empty value for ignore_userlevel in some edge cases, this is now fixed.
+	* Custom search engines were loaded after trackPageview, this was wrong as shown [by these docs](http://code.google.com/intl/sr/apis/analytics/docs/tracking/asyncMigrationExamples.html#SearchEngines), now fixed.
+
+= 4.0.2 =
+* Old settings from versions below 4.0 are now properly sanitized and inherited (slaps forehead about simplicity of fix).
+* New features in this release: 
+	* Link sanitization added: relative links will be rewritten to absolute, so /out/ becomes http://example.com/out/ and is tracked properly.
+	* Added a feature to track and label internal links as outbound clicks, for instance /out/ links.
+	* Added tracking for mailto: links.
+	* Added a filter for text-widgets, all links in those widgets are now tagged too.
+	* Added support for [_anonymizeIp](http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp).
+* Bugs fixed in this release:
+	* Made sure all content filters don't run when the current user is ignored because of his user level.
+
+= 4.0.1 =
+* Fix for when you have only 1 site in a specific Analytics profile.
+
+= 4.0 =
+* NOTE WHEN UPGRADING: you'll have to reconfigure the plugin so it can fully support all the new features!
+* Complete rewrite of the codebase
+* Switched to the new asynchronous event tracking model
+* Switched link tracking to an event tracking model, because of this change removed 5 settings from the settings panel that were no longer needed
+* Implemented custom variable tracking to track: 
+	* On the session level: whether the user is logged in or not. 
+	* On the page level: the current posts's author, category, tags, year of publication and post type.
+* Added Google Analytics API integration, so you can easily select a site to track.
+* E-Commerce integration, tracking transactions, support for WP E-Commerce and Shopp.
+* Much much more: check out [the release post](http://yoast.com/google-analytics-wordpress-v4/).
 
 = 3.2.3 =
 * Added 0 result search tracking inspired by [Justin Cutroni's post](http://www.epikone.com/blog/2009/09/08/tracking-ero-result-searches-in-google-analytics/).
@@ -134,36 +317,32 @@ This section describes how to install the plugin and get it working.
 
 == Frequently Asked Questions ==
 
-= This inflates my clicks, can I filter those out? =
-
-Yes you can, create a new profile based on your original profile and name it something like 'domain - clean'. For each different outbound clicks or download prefix you have, create an exclude filter. You do this by:
-
-1. choosing a name for the filter, something like 'Exclude Downloads';
-1. selecting 'Custom filter' from the dropdown;
-1. selecting 'Exclude';
-1. selecting 'Request URI' in the Filter Field dropdown;
-1. setting the Filter Pattern to '/downloads/(.*)$' for a prefix '/downloads/';
-1. setting case sensitive to 'No'.
-
-For some more info, see the screenshot under Screenshots.
-
 = Can I run this plugin together with another Google Analytics plugin? =
 
 No. You can not. It will break tracking.
 
-= How do I check the image search stats and keywords after installing this plugin? =
+= Another profile than the one I selected is showing as selected? =
 
-Check out this <a href="http://yoast.com/wordpress/google-analytics/how-to-check-your-image-search-stats-and-keywords/">tutorial on checking your image search stats and keywords</a>.
+You probably have multiple profiles for the same website, that share the same UA-code. If so, it doesn't matter which of the profiles is shown as selected, tracking will be correct.
 
-= How do I check my outbound link and download stats? =
+= I've just installed the new tracking and Google Analytics says it's not receiving data yet? =
 
-Check out this <a href="http://yoast.com/wordpress/google-analytics/checking-your-outbound-click-stats/">tutorial on checking your outbound click stats</a>.
+Give it a couple of hours, usually it'll be fixed. It can take up to 24 hours to appear though.
 
-= I want the image search keywords in one big overview... =
+= Google Analytics says it's receiving data, but I don't see any stats yet? =
 
-Create a <a href="http://yoast.com/wordpress/google-analytics/creating-a-google-analytics-filter-for-image-search/">Google Analytics filter for image search</a>.
+This can take up to 24 hours after the installation of the new tracking code.
+
+= Why is the tracking code loaded in the head section of the site? =
+
+Because that's where it belongs. It makes the page load faster (yes, faster, due to the asynchronous method of loading the script) and tracking more reliable. If you must place it in the footer anyway, switch to manual mode and check out the docs for [manual placement of the Google Analytics code](http://yoast.com/wordpress/google-analytics/manual-placement/).
 
 == Screenshots ==
 
-1. Screenshot of the configuration panel for this plugin.
-2. Example of the exclude filter in Google Analytics.
+1. Screenshot of the basic settings panel for this plugin.
+2. Screenshot of the custom variable settings panel.
+3. Screenshot of the link tracking panel.
+4. Screenshot of the advanced settings panel.
+5. Screenshot of the debugging mode in action.
+
+== Upgrade Notice ==
